@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node --ignore index.get.json ./src/index.js",
+    "dev": "FIXTURES=true nodemon --exec babel-node --ignore index.get.json ./src/index.js",
     "test": "jest --runInBand babel-node .test/",
-    "start": "NODE_ENV=prod node ./build/index.js",
+    "start": "NODE_ENV=prod FIXTURES=true node ./build/index.js",
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-server"

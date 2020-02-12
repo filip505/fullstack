@@ -8,10 +8,14 @@ import WebSockets from './websockets'
 import cors from 'koa-cors'
 import Worker from './worker'
 const PORT = process.env.PORT ? process.env.PORT : 3000
+const FIXTURES = process.env.FIXTURES ? process.env.FIXTURES : false
 
 const server = () => new Promise(async (resolve, reject) => {
 
-  await createFixtures()
+  if(FIXTURES){
+    await createFixtures()
+  }
+ 
   const app = new Koa()
   const server = http.createServer(app.callback())
   const webSockets = new WebSockets({ server })
