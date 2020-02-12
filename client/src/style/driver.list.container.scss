@@ -1,0 +1,27 @@
+.container{
+    padding: 10px;
+    width: 20rem;
+    background-color: #242134;
+    color: #fff;
+
+    .header{
+        text-align: center;
+    }
+    
+    .item {
+        border-radius: 4px;
+        background-color: #37334C;
+        padding:5px;
+        margin:5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #37334C;
+        cursor: pointer;
+    }
+
+    .item:hover {
+        background-color: #fff;
+        color: #37334C;
+    }
+}
+

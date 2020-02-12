@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+    .card{
+        width: 400px;
+        height: fit-content;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        padding: 5px;
+        .item{
+            padding: 5px;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+
+            .button{
+                cursor: pointer;
+                color: #fff;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: #4ADB7A;
+                border-width: 1px;
+                background-color: #4ADB7A;
+            }
+
+            .button:hover{
+                background-color: #fff;
+                color: #4ADB7A;
+                border-style: solid;
+                border-width: 1px;
+            }
+        }
+
+       
+
+        
+    }
+}
+

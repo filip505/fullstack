@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["then"],"mappings":";;AAAA;;;;AACA,uBAASA,IAAT","sourcesContent":["import server from './server'\nserver().then()\n"],"file":"index.js"}
